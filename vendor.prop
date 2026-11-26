@@ -20,10 +20,6 @@ bluetooth.profile.pan.panu.enabled?=true
 bluetooth.core.gap.le.conn.min.limit=6
 persist.vendor.bluetooth.prefferedrole=master
 
-## Buttons
-poweroff.doubleclick=1
-sys.vendor.global.settingskey=dashboard
-
 ## Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
@@ -51,9 +47,6 @@ vendor.tv.dtv.fake_pid=0x2fff
 ## HWUI
 ro.hwui.texture_cache_size=40.5f
 ro.hwui.layer_cache_size=33.75f
-
-## Logging
-log.tag.HDMI=DEBUG
 
 ## Media
 persist.sys.media.avsync=true

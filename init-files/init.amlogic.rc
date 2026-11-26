@@ -85,21 +85,8 @@ service remotecfg /vendor/bin/remotecfg /vendor/etc/remote.conf
     oneshot
     seclabel u:r:remotecfg:s0
 
-service factoryreset /mnt/vendor/tee/factoryreset.sh
-    class main
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0
-
 service bugreport /system/bin/dumpstate -d -p -B -z \
     -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
     class main
     disabled
     oneshot
-
-on property:sys.boot_completed=1
-    # Enable ZRAM on boot_complete
-    swapon_all /vendor/etc/fstab.amlogic
-    start factoryreset
