@@ -1,7 +1,5 @@
 on post-fs-data
     insmod /vendor/lib/modules/mali.ko
-    insmod /oem/overlay/dovi.ko
-    insmod /vendor/lib/sl_hdr.ko
 
 on boot
     write /sys/module/amvdec_mh264/parameters/reorder_dpb_size_margin 9

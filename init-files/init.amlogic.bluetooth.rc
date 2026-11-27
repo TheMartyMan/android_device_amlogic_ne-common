@@ -5,7 +5,6 @@ service unloadamlbtsdio /system/bin/rmmod sdio_bt
     disabled
     oneshot
 on property:vendor.sys.amlbtsdiodriver=true
-    insmod /vendor/lib/modules/aml_sdio.ko
     insmod /vendor/lib/modules/sdio_bt.ko
 
 on property:vendor.sys.amlbtsdiodriver=false
